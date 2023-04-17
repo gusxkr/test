@@ -9,4 +9,4 @@ jobs:
     steps:
     - name: Pull Master Branch
       run: |
-        cd /home/ubuntu/test/ && sudo git pull origin master
+        cd /home/ubuntu/test/ && git pull origin master
