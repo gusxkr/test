@@ -1,12 +1,12 @@
-name: CI/CD
+name: CI/CD  # A name for the workflow
 
-on: [push, pull_request]
+on: [push, pull_request]  # Triggers the workflow on push and pull_request events
 
 jobs:
-  build:
-    runs-on: self-hosted
+  build:  # Defines a job named "build"
+    runs-on: self-hosted  # Specifies that the job runs on a self-hosted runner
 
-    steps:
-    - name: Pull Master Branch
-      run: |
-        cd /home/ubuntu/test/ && git pull origin master
+    steps:  # A list of steps to be executed in the job
+    - name: Pull Master Branch  # A name for the step
+      run: |  # A shell command to run
+        cd /home/ubuntu/test/ && git pull origin master  # Change directory to /home/ubuntu/test/ and pull the latest changes from the master branch of the Git repository located there
