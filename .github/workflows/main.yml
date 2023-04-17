@@ -9,4 +9,4 @@ jobs:
     steps:  # A list of steps to be executed in the job
     - name: Pull Master Branch  # A name for the step
       run: |  # A shell command to run
-        cd /home/ubuntu/test/ && git pull origin master  # Change directory to /home/ubuntu/test/ and pull the latest changes from the master branch of the Git repository located there
+        cd /home/ubuntu/test/ && git pull  # Change directory to /home/ubuntu/test/ and pull the latest changes from the master branch of the Git repository located there
